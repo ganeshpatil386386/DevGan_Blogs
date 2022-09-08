@@ -54,7 +54,7 @@ function Hero({ showElements = true }: { showElements: boolean }) {
             duration: 2,
             ease: 'easeInOut',
           }}
-          className='absolute hidden w-20 md:block bottom-40 left-10 md:left-40'
+          className='absolute bottom-40 left-10 hidden w-20 md:left-40 md:block'
         >
           {im2 && (
             <img
@@ -72,7 +72,7 @@ function Hero({ showElements = true }: { showElements: boolean }) {
             type: 'spring',
             stiffness: 50,
           }}
-          className='absolute justify-center hidden w-full md:flex -top-80'
+          className='absolute -top-80 hidden w-full justify-center md:flex'
         >
           <motion.div
             animate={{ y: [-5, 0, 5, 0, -5] }}
@@ -93,7 +93,7 @@ function Hero({ showElements = true }: { showElements: boolean }) {
           </motion.div>
         </motion.div>
 
-        <div className='absolute top-0 right-0 w-32 overflow-hidden object-fit md:-top-20 md:w-80'>
+        <div className='object-fit absolute top-0 right-0 w-32 overflow-hidden md:-top-20 md:w-80'>
           {im4 && <img src={im4} alt='floating image' className='m-3' />}
         </div>
 
@@ -105,7 +105,7 @@ function Hero({ showElements = true }: { showElements: boolean }) {
             ease: 'easeInOut',
             delay: Math.random() * 3,
           }}
-          className='absolute text-white rotate-90 right-4 md:right-2 bottom-6'
+          className='absolute right-4 bottom-6 rotate-90 text-white md:right-2'
         >
           <div
             className='flex transform'
@@ -113,7 +113,7 @@ function Hero({ showElements = true }: { showElements: boolean }) {
           >
             Scroll down
             <svg
-              className='w-6 h-6'
+              className='h-6 w-6'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -130,62 +130,62 @@ function Hero({ showElements = true }: { showElements: boolean }) {
         </motion.div>
       </motion.div>
 
-      <div className='flex flex-col items-center justify-center h-screen'>
-        <div className='flex mt-10 md:mt-0'>
+      <div className='flex h-screen flex-col items-center justify-center'>
+        <div className='mt-10 flex md:mt-0'>
           <div className='z-50 m-2'>
             <div
-              className={` font-poppins font-bold
-                  uppercase text-white text-6xl md:text-8xl
-                  selection:bg-blue-200 selection:text-gray-400
-                  focus:outline-none ${styles.animateFlicker}`}
+              className={` font-poppins text-6xl
+                  font-bold uppercase text-white selection:bg-blue-200
+                  selection:text-gray-400 focus:outline-none
+                  md:text-8xl ${styles.animateFlicker}`}
             >
-              Dhravya Shah
+              Ganesh Patil
             </div>
           </div>
         </div>
 
-        <div className='items-center justify-center mx-3 mt-10 text-xl text-white sm:mx-10 md:flex'>
+        <div className='mx-3 mt-10 items-center justify-center text-xl text-white sm:mx-10 md:flex'>
           <span className='flex'>
             I&apos;m
-            <div className='mx-2 font-semibold text-transparent font-mukta bg-gradient-to-r min-w-fit from-pink-400 to-blue-300 bg-clip-text'>
-              a creative developer
+            <div className='mx-2 min-w-fit bg-gradient-to-r from-pink-400 to-blue-300 bg-clip-text font-mukta font-semibold text-transparent'>
+              a web developer
             </div>
           </span>
           <span className='flex'>
             from
-            <div className='mx-2 font-semibold text-transparent font-mukta bg-gradient-to-b min-w-fit from-orange-600 via-white to-green-600 bg-clip-text'>
-              Mumbai, India
+            <div className='mx-2 min-w-fit bg-gradient-to-b from-orange-600 via-white to-green-600 bg-clip-text font-mukta font-semibold text-transparent'>
+              Maharashtra, India
             </div>
           </span>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-4 mt-10 md:flex-row'>
+        <div className='mt-10 flex flex-col items-center justify-center gap-4 md:flex-row'>
           <div className='flex gap-2'>
             <a
-              href='mailto:hi@dhravya.dev'
-              className='flex px-3 py-2 rounded-md shadow-md bg-slate-100 text-slate-800 shadow-slate-300'
+              href='mailto:ganeshpatil386386@gmail.com '
+              className='flex rounded-md bg-slate-100 px-3 py-2 text-slate-800 shadow-md shadow-slate-300'
             >
               Mail
             </a>
 
             <Link passHref href='/blog'>
-              <a className='flex px-3 py-2 rounded-md shadow-md bg-slate-100 text-slate-800 shadow-slate-300'>
+              <a className='flex rounded-md bg-slate-100 px-3 py-2 text-slate-800 shadow-md shadow-slate-300'>
                 Blog
               </a>
             </Link>
             <Link passHref href='/about'>
-              <a className='flex px-3 py-2 rounded-md shadow-md bg-slate-100 text-slate-800 shadow-slate-300'>
+              <a className='flex rounded-md bg-slate-100 px-3 py-2 text-slate-800 shadow-md shadow-slate-300'>
                 About me
               </a>
             </Link>
           </div>
           <div className='flex gap-2'>
             <a
-              href='https://github.com/dhravya'
-              className='flex px-3 py-2 rounded-md shadow-md bg-slate-100 text-slate-800 shadow-slate-300'
+              href='https://github.com/ganeshpatil386386'
+              className='flex rounded-md bg-slate-100 px-3 py-2 text-slate-800 shadow-md shadow-slate-300'
             >
               <svg
-                className='w-6 h-6'
+                className='h-6 w-6'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 496 512'
               >
@@ -193,11 +193,11 @@ function Hero({ showElements = true }: { showElements: boolean }) {
               </svg>
             </a>
             <a
-              href='https://twitter.com/dhravyashah'
-              className='flex px-3 py-2 rounded-md shadow-md bg-slate-100 text-slate-800 shadow-slate-300'
+              href='https://twitter.com/ganeshstwt'
+              className='flex rounded-md bg-slate-100 px-3 py-2 text-slate-800 shadow-md shadow-slate-300'
             >
               <svg
-                className='w-6 h-6'
+                className='h-6 w-6'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 512 512'
                 fill='#1a8cd8'

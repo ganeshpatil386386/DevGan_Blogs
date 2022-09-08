@@ -1,5 +1,5 @@
 ---
-name: Dhravya Shah
+name: Ganesh Patil
 avatar: /static/images/avatar.png
 occupation: Student, Developer
 company: null
