@@ -1,4 +1,4 @@
-# Dhravya.dev | Personal Website
+# DevGan Blogs
 
 I've used [Yunsii's Tailwind NextJS typescript](https://github.com/yunsii/tailwind-nextjs-typescript-starter-blog) blog template with my own design.
 
